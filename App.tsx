@@ -1,5 +1,6 @@
 import React from 'react';
 import { TamaguiProvider, Button, Card, styled, YStack, Text } from 'tamagui';
+import {Image} from 'react-native'
 import  config  from './tamagui.config';
 import { tokens } from './tamagui.config';
 import { useFonts } from 'expo-font' 
@@ -39,7 +40,7 @@ export default function App() {
          ai='center'
        >
          <YStack w='90%' h='55%' bg={tokens.color.white} marginTop={20} br={tokens.radius.large} >
-
+          
          </YStack>
        </YStack>
       </YStack>

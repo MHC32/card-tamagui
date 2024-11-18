@@ -26865,7 +26865,8 @@
       "br": "borderRadius",
       "h": "height",
       "jc": "justifyContent",
-      "p": "padding"
+      "p": "padding",
+      "mt": "marginTop"
     },
     "unset": {},
     "settings": {
@@ -26881,7 +26882,8 @@
       "borderRadius": "br",
       "height": "h",
       "justifyContent": "jc",
-      "padding": "p"
+      "padding": "p",
+      "marginTop": "mt"
     },
     "parsed": true,
     "getNewCSS": "Function",
