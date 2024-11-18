@@ -1,20 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {YStack, Text} from 'tamagui'
+import config from './tamagui.config'
+import {tokens} from './tamagui.config'
+import {useFonts} from 'expo-font'
 
 export default function App() {
+  const [loaded]= useFonts({
+    Urbanist: require('./assets/fonts/Urbanist-Light.ttf'),
+    UrbanistBold: require('./assets/fonts/Urbanist-Bold.ttf')
+  })
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <YStack w='100%' h='100%' bg={tokens.color.white} jc='center' ai='center' >
+      <Text>Hello from App.tsx</Text>
+    </YStack>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
