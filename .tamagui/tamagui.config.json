@@ -26547,7 +26547,6 @@
   "tamaguiConfig": {
     "fonts": {
       "heading": {
-        "family": "Helvetica, Arial, Sans-serif, Urbanist",
         "size": {
           "1": 12,
           "2": 14,
@@ -26573,12 +26572,8 @@
           "true": 0
         },
         "face": {
-          "100": {
-            "normal": "Helvetica, Arial, Sans-serif, Urbanist"
-          },
-          "200": {
-            "normal": "Helvetica, Arial, Sans-serif, Urbanist"
-          },
+          "100": {},
+          "200": {},
           "300": {
             "normal": "InterLight",
             "italic": "InterItalic"
@@ -26610,7 +26605,6 @@
         }
       },
       "body": {
-        "family": "Helvetica, Arial, Sans-serif, Urbanist",
         "size": {
           "1": 12,
           "2": 14,
@@ -26636,12 +26630,8 @@
           "true": 0
         },
         "face": {
-          "100": {
-            "normal": "Helvetica, Arial, Sans-serif, Urbanist"
-          },
-          "200": {
-            "normal": "Helvetica, Arial, Sans-serif, Urbanist"
-          },
+          "100": {},
+          "200": {},
           "300": {
             "normal": "InterLight",
             "italic": "InterItalic"

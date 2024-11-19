@@ -22,7 +22,6 @@ const zIndex = {
 };
 
 const interFont = createFont ({
-  family: 'Helvetica, Arial, Sans-serif, Urbanist',
   size: {
       1: 12,
       2: 14,
