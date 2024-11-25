@@ -1,15 +1,13 @@
-const { getDefaultConfig } = require('expo/metro-config');
+const { getDefaultConfig } = require('@expo/metro-config');
 
-module.exports = (() => {
-  const config = getDefaultConfig(__dirname);
+const defaultConfig = getDefaultConfig(__dirname);
 
-  config.transformer = {
-    babelTransformerPath: require.resolve('react-native-svg-transformer'),
-  };
-  config.resolver = {
-    assetExts: config.resolver.assetExts.filter((ext) => ext !== 'svg'),
-    sourceExts: [...config.resolver.sourceExts, 'svg'],
-  };
+// Remove svg from the asset extensions.
+defaultConfig.resolver.assetExts = defaultConfig.resolver.assetExts.filter((ext) => ext !== 'svg');
+// And add it to the source code extensions.
+defaultConfig.resolver.sourceExts.push('svg');
 
-  return config;
-})();
+// Add a custom babel transformer which converts svg files to React components.
+defaultConfig.transformer.babelTransformerPath = require.resolve('react-native-svg-transformer');
+  
+module.exports = defaultConfig;

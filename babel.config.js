@@ -1,4 +1,3 @@
-
 process.env.TAMAGUI_TARGET = 'native'; // Don't forget to specify your TAMAGUI_TARGET here
 
 module.exports = function(api) {

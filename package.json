@@ -1,39 +1,36 @@
 {
-  "name": "card-tamagui",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web"
-  },
   "dependencies": {
-    "@tamagui/animations-react-native": "^1.116.15",
-    "@tamagui/babel-plugin": "^1.116.15",
-    "@tamagui/config": "^1.116.15",
-    "@tamagui/font-inter": "^1.116.15",
-    "@tamagui/shorthands": "^1.116.15",
-    "@tamagui/themes": "^1.116.15",
+    "@tamagui/animations-react-native": "^1.117.1",
+    "@tamagui/babel-plugin": "^1.117.1",
+    "@tamagui/config": "^1.117.1",
+    "@tamagui/font-inter": "^1.117.1",
+    "@tamagui/shorthands": "^1.117.1",
+    "@tamagui/themes": "^1.117.1",
+    "@types/react": "~18.3.12",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
-    "expo": "~52.0.7",
-    "expo-asset": "~11.0.1",
+    "expo": "^52.0.11",
     "expo-font": "~13.0.1",
     "expo-linear-gradient": "~14.0.1",
-    "expo-status-bar": "~2.0.0",
     "react": "18.3.1",
-    "react-dom": "^18.3.1",
-    "react-native": "0.76.2",
+    "react-dom": "18.3.1",
+    "react-native": "0.76.3",
     "react-native-reanimated": "~3.16.1",
     "react-native-svg": "15.8.0",
+    "react-native-svg-transformer": "^0.14.3",
     "react-native-web": "^0.19.13",
-    "tamagui": "^1.116.15"
+    "tamagui": "^1.117.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@types/react": "~18.3.12",
-    "react-native-svg-transformer": "^1.5.0",
-    "typescript": "^5.3.3"
+    "@babel/core": "^7.19.3",
+    "@expo/metro-config": "~0.19.0",
+    "@expo/webpack-config": "^19.0.0",
+    "@svgr/webpack": "^5.5.0",
+    "metro-react-native-babel-transformer": "^0.77.0"
   },
-  "private": true
+  "name": "card-tamagui",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  }
 }
