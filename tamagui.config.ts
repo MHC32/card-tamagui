@@ -96,6 +96,7 @@ const config = createTamagui({
       m: 'margin',
       w: 'width',
       ai: 'alignItems',
+      as: 'alignSelf',
       bg: 'backgroundColor',
       br: 'borderRadius',
       h: 'height',
