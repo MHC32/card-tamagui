@@ -102,6 +102,8 @@ const config = createTamagui({
       jc: 'justifyContent',
       p: 'padding',
       mt: 'marginTop',
+      fw: 'fontWeight',
+      fs: 'fontSize',
     } as const,
 })
 

@@ -34,6 +34,13 @@ export default function App() {
               </YStack>
             </YStack>
          </YStack>
+
+         <YStack w='90%' h='20%'  paddingTop={10} paddingLeft={5}>
+           <Text color={tokens.color.white}   fontSize={24} fontWeight={900}>Gralic </Text>
+           <Text color={tokens.color.gray} fontSize={20} fontWeight={500} mt='10'>Intense Flavor znd Aroma</Text>
+         </YStack>
+
+         <Button>Buy now</Button>
        </YStack>
       </YStack>
     </TamaguiProvider>
