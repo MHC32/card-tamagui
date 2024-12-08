@@ -1,4 +1,4 @@
-import {createTokens, createTamagui, createFont} from 'tamagui';
+import { createTokens, createTamagui, createFont } from 'tamagui';
 
 const size = {
   small: 16,
@@ -21,36 +21,36 @@ const zIndex = {
   true: 1,
 };
 
-const interFont = createFont ({
+const interFont = createFont({
   size: {
-      1: 12,
-      2: 14,
-      3: 15,
-      true: 12,
+    1: 12,
+    2: 14,
+    3: 15,
+    true: 12,
   },
 
-  lineHeight:{
-      2: 22,
-      true: 22
+  lineHeight: {
+    2: 22,
+    true: 22
   },
 
   weight: {
-      1: 300,
-      // 2 will be 300
-      3: 600,
-      true: 300,
+    1: 300,
+    // 2 will be 300
+    3: 600,
+    true: 300,
   },
 
-  letterSpacing:{
-      1: 0,
-      2: -1,
-      true: 0
+  letterSpacing: {
+    1: 0,
+    2: -1,
+    true: 0
   },
 
   face: {
-      300: {normal: 'InterLight', italic: 'InterItalic'},
-      600: {normal: 'InterBold'},
-      true: {normal: 'InterLight', italic: 'InterItalic'},
+    300: { normal: 'InterLight', italic: 'InterItalic' },
+    600: { normal: 'InterBold' },
+    true: { normal: 'InterLight', italic: 'InterItalic' },
   },
 })
 
@@ -59,7 +59,7 @@ export const tokens = createTokens({
   size,
   radius,
   zIndex,
-  space: {small:8, medium:12, large:16, true: 12},
+  space: { small: 8, medium: 12, large: 16, true: 12 },
   color: {
     primary: '#3498db',
     secondary: '#2ecc71',
@@ -74,50 +74,50 @@ export const tokens = createTokens({
 const config = createTamagui({
   tokens,
 
-  fonts:{
+  fonts: {
     heading: interFont,
     body: interFont,
   },
 
-   themes: {
-      light: {
-        bg: '#f2f2f2',
-        color: tokens.color.black,
-      },
-      dark: {
-        bg: '#111',
-        color: tokens.color.white,
-      },
+  themes: {
+    light: {
+      bg: '#f2f2f2',
+      color: tokens.color.black,
     },
-  
-    shorthands: {
-      px: 'paddingHorizontal',
-      f: 'flex',
-      m: 'margin',
-      w: 'width',
-      ai: 'alignItems',
-      as: 'alignSelf',
-      bg: 'backgroundColor',
-      br: 'borderRadius',
-      h: 'height',
-      jc: 'justifyContent',
-      p: 'padding',
-      mt: 'marginTop',
-      fw: 'fontWeight',
-      fs: 'fontSize',
-    } as const,
+    dark: {
+      bg: '#111',
+      color: tokens.color.white,
+    },
+  },
+
+  shorthands: {
+    px: 'paddingHorizontal',
+    f: 'flex',
+    m: 'margin',
+    w: 'width',
+    ai: 'alignItems',
+    as: 'alignSelf',
+    bg: 'backgroundColor',
+    br: 'borderRadius',
+    h: 'height',
+    jc: 'justifyContent',
+    p: 'padding',
+    mt: 'marginTop',
+    fw: 'fontWeight',
+    fs: 'fontSize',
+  } as const,
 })
 
 type AppConfig = typeof config
 
 
-  declare module 'tamagui'{
-    interface tamaguiCustomConfig extends AppConfig {}
+declare module 'tamagui' {
+  interface tamaguiCustomConfig extends AppConfig { }
 
 
-    interface typeOverride {
-        groupNames(): 'a' | 'b' | 'c'
-    }
+  interface typeOverride {
+    groupNames(): 'a' | 'b' | 'c'
   }
+}
 
-  export default config
+export default config
