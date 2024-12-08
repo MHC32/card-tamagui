@@ -26,7 +26,7 @@ export default function App() {
           br='$large'
           ai='center'
         >
-          <YStack w='90%' h='55%' bg={tokens.color.white} marginTop={20} br={tokens.radius.large} >
+          <YStack w='90%' h='55%' bg='$white' marginTop={20} br='$large' >
             <Image source={require('./assets/pexels.png')} style={{ width: '100%', height: '100%', borderRadius: 12 }} />
             <YStack w='15%' h='15%' position='relative' top='-220' left='230'>
               <YStack w='15%' h='15%' position='relative' top='-220' left='230'>
