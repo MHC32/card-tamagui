@@ -40,7 +40,7 @@ export default function App() {
             <Text color='$gray' fontSize={20} fontWeight={500} mt='10'>Intense Flavor znd Aroma</Text>
           </YStack>
 
-          <Button w='130' h='53' fontSize={22} fontWeight={900} color='$white' bg={tokens.color.green} alignSelf='flex-end' marginRight='15' marginTop='15'>
+          <Button w='130' h='53' fontSize={22} fontWeight={900} color='$white' bg='$green' alignSelf='flex-end' marginRight='15' marginTop='15'>
             Buy now
           </Button>
         </YStack>
