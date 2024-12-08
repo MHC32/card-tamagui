@@ -22,8 +22,8 @@ export default function App() {
         <YStack
           w='330'
           h='430'
-          bg={tokens.color.black}
-          br={tokens.radius.large}
+          bg='$black'
+          br='$large'
           ai='center'
         >
           <YStack w='90%' h='55%' bg={tokens.color.white} marginTop={20} br={tokens.radius.large} >
