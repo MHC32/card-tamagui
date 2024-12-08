@@ -14,10 +14,10 @@ export default function App() {
       <YStack
         w='100%'
         h='100%'
-        bg={tokens.color.green}
+        bg='$green'
         jc='center'
         ai='center'
-        br={tokens.radius.medium}
+        br='$medium'
       >
         <YStack
           w='330'
